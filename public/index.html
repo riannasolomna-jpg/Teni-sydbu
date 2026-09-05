@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Архив ролевой «Тени судьбы».">
+  <title>Архив Дома — Тени судьбы</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark">А</span>
+      <span><strong>Архив Дома</strong><small>«Тени судьбы»</small></span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Поиск" title="Поиск">⌕</button>
+      <button class="icon-button menu-button" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" title="Меню">⋮</button>
+    </div>
+  </header>
+  <aside class="side-menu" id="sideMenu" aria-hidden="true">
+    <div class="menu-head"><span>Архив</span><button class="close-button" id="menuClose" aria-label="Закрыть меню">×</button></div>
+    <nav id="mainNav"></nav>
+  </aside>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+  <section class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="search-inner">
+      <label for="searchInput">Поиск по архиву</label>
+      <div class="search-row"><input id="searchInput" type="search" placeholder="Название, место, стая..." autocomplete="off"><button class="primary-button" id="clearSearch">Очистить</button></div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </section>
+  <main id="app" class="app"></main>
+  <footer class="site-footer">
+    <div><strong>Архив Дома</strong><span>Ролевая «Тени судьбы»</span></div>
+    <div><span>© 2026</span><span>Создатель: <a href="https://t.me/CrazyCrabSalad" target="_blank" rel="noopener">@CrazyCrabSalad</a></span></div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
